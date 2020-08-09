@@ -1,0 +1,126 @@
+extends layout
+
+block content
+    section.section1
+        .section1__backColor
+        .section1__container
+            h3 #{title}
+            p Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex corrupti perspiciatis sint voluptatem, esse maiores minima possimus veritatis ut nisi?
+            button Learn More
+
+    section.section2
+        h3 We Provide various kind of service for you
+
+        div.section2__designs
+            div.section2__singleDesign 
+                img(src="/images/img2.png", alt="")
+                h3 Graphic Design
+                p Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore odit veniam similique id laborum? Inventore.
+            div.section2__singleDesign
+                img(src="/images/img3.png", alt="")
+                h3 App Design
+                p Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore odit veniam similique id laborum? Inventore.
+            div.section2__singleDesign
+                img(src="/images/img4.png", alt="")
+                h3 Web Design
+                p Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore odit veniam similique id laborum? Inventore.
+
+    section.section3
+        .section3__backColor
+            .section3__left
+                img(src="/images/section3/img1.png", alt="")
+            .section3__right
+                .section3__sectionTitle Why Choose Us!
+                .section3__sectionText Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque fuga quod minima amet itaque numquam!
+                .section3__icons
+                    .section3__icon
+                        img(src="/images/section3/check.png", alt="")
+                        .section3__info
+                            span 100+
+                            span Projects Complete
+
+                    .section3__icon
+                        img(src="/images/section3/cart.png", alt="")
+                        .section3__info
+                            span 100+
+                            span Active Projects
+
+                    .section3__icon
+                        img(src="/images/section3/user.png", alt="")
+                        .section3__info
+                            span 100+
+                            span Client Satisfield
+                
+    section.customersInfo
+        .customersInfo__title
+            h2 What Our Customer Say About Us
+            .button 
+                span Read More
+                <i class="fas fa-long-arrow-alt-right"></i>
+
+        .customersInfo__message
+            img(src="/images/section4/img.png", alt="").customersInfo_portfilo
+            .customersInfo__text
+                .customersInfo__stars
+                    img(src="images/section4/star.png", alt="")
+                    img(src="images/section4/star.png", alt="")
+                    img(src="images/section4/star.png", alt="")
+                    img(src="images/section4/star.png", alt="")
+                    img(src="images/section4/star.png", alt="")
+                p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit esse vero sint ipsum nihil, ex ea voluptatum consectetur numquam rem saepe velit ipsa voluptate, explicabo facere quas dignissimos repellendus assumenda.
+                span Riad Isalm
+                span Product Manager. @Pixbay
+
+    section.formArea
+        .title Get In Touch And Contact With Us!
+        .text Lorem ipsum dolor, sit amet consectetur adipisicing elit. At illum porro aliquam nobis dicta pariatur cum illo libero obcaecati dolorem? Ipsa sapiente explicabo pariatur voluptas tenetur dolores, ipsum ex reprehenderit?
+        .form
+            .formPart
+                .nameArea
+                    input(type="text" placeHolder="First Name").inputName
+                    input(type="text",placeholder="Laste Name",style="margin-left:15px;").inputName
+                input(type="email" placeHolder="Email").inputEmail
+                textarea(name="text", cols="30", rows="10" placeHolder="Your Message")
+                a(href="#").sendButton
+                    span Send Message
+            .imagePart
+                img(src="/images/section4/penguen.png", alt="")
+        .contact
+            .contact__left
+                span Contact Us!
+                p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet, reiciendis autem? Maxime atque ut libero?
+            .contact__right
+                input(type="text",placeHolder="Email here") 
+                .contact__send
+                    span Send
+
+    footer
+        .footer__all
+            .footer__icons
+                .footer__pixbey
+                    img(src="/images/footer/pix.png", alt="")
+                    span Pixbey
+                .footer__img
+                    img(src="/images/footer/facebook.png", alt="")
+                    img(src="/images/footer/twitter.png", alt="")
+                    img(src="/images/footer/linkedn.png", alt="")
+                    img(src="/images/footer/paypal.png", alt="")
+            .footer__links
+                .title Links
+                ul
+                    each val,index in ["Home","Pricing","Download","About","Service"]
+                        li
+                            a(href="#")=val
+            .footer__links
+                .title Support
+                ul
+                    each val,index in ["FAQ","How it","Features","Contact","Reporting"]
+                        li
+                            a(href="#")=val
+            .footer__links
+                .title Contact Us
+                ul
+                    each val,index in ["05442552","taha.zeybek@ajansspor","İstanbul City"," "," "]
+                        li
+                            a(href="#")=val
+    
